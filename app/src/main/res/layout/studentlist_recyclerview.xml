@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:id="@+id/leinerlayout_studentlist"
+    android:layout_height="90dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="89dp"
+        android:orientation="horizontal"
+        android:background="@color/dark_black2"
+        android:weightSum="2">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="80dp"
+              android:layout_gravity="center"
+                android:id="@+id/studnetlist_circularimageview"
+                android:layout_height="70dp"
+                android:src="@drawable/male"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="@color/dark_black1"
+                android:id="@+id/firstname_textview"
+                android:text="Dawinder"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/lastname_textview"
+                android:textStyle="bold"
+                android:textColor="@color/dark_black1"
+                android:textSize="17dp"
+                android:text="Singh"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="17dp"
+                android:id="@+id/gender_textview"
+                android:text="Male"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/dark_black1"/>
+
+</LinearLayout>
